@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Approach Section */
+  .approach {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  }
+  
+  .approach-img {
+    width: 45%; /* Adjust width for better scaling */
+    text-align: center;
+  }
+  
+  .approach-img img {
+    width: 100%; /* Fully responsive image */
+    max-width: 500px; /* Prevents oversized images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+  }
+  
+  .approach-right {
+    width: 45%;
+    text-align: justify;
+  }
+  
+  .approach-title {
+    color: #ff6633;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+  
+  .approach-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .approach-bullet {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .approach-bullet img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .approach-center {
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+  }
+  
+  /* Form Section */
+  .background {
+    background: url("../images/landing-page-design_2.jpg") no-repeat center center;
+    background-size: cover;
+    min-height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .form-container {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .hero {
+    font-size: 2rem;
+    color: #f36c37;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  input[type="text"],
+  select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  select:focus {
+    border-color: #f36c37;
+    box-shadow: 0 3px 8px rgba(243, 108, 55, 0.3);
+  }
+  
+  input[type="submit"] {
+    background-color: #f36c37;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #d9534f;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .approach {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .approach-img,
+    .approach-right {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .approach-img img {
+      margin: 0 auto;
+    }
+  
+    .form-container {
+      max-width: 90%; /* Adjust form width for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero {
+      font-size: 1.5rem;
+    }
+  
+    input[type="text"],
+    select,
+    input[type="submit"] {
+      font-size: 0.9rem;
+    }
+  
+    .approach-title {
+      font-size: 1.5em;
+    }
+  
+    .approach-description {
+      font-size: 0.9rem;
+    }
+  }
+  
